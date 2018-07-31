@@ -7,8 +7,9 @@ import time
 import requests
 import random
 
-s = Steem(keys=['5KQmqAv4xjh3NHGQqASBSyurxFYQuoRPmB2HTj8AjwZwyTtp1LU','5JZtFgeQpd6GbukkLV8oTAZ1NxYfoBARWwJTb65oC4W8owEUSZg'])
-accountHandle = "sarcastic.man"
+s = Steem(keys=['private-posting-key','private-active-key'])
+accountHandle = "account-handle"
+
 
 
 def fetch_reddit_meme():

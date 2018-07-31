@@ -6,8 +6,9 @@ from dateutil import parser
 import time
 from random import randrange
 # create Steem instance
-s = Steem(keys=['5KYbuefVtjm8dvt37JLCo3fEp8Y7unnQacJ6KrdcWof3wYaDNE5','5JhPVV7bfYhBYj5r35ic5EaawMNjAYHfEH9i3mBGfuUXRcCezfj'])
-accountHandle = "ksvvb"
+s = Steem(keys=['private-posting-key','private-active-key'])
+accountHandle = "account-handle"
+
 messages_list = ['I really love your blog :)','Nice post, beautifully presented!!', "Loved it, !!", "keep up the good work!","thank you for sharing this with us"," Detail oriented with nice pics."]
 
 latestPostId = s.get_feed(accountHandle, -1, 1)[0]['entry_id']
